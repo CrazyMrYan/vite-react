@@ -1,0 +1,9 @@
+.col-charts{
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 300px;
+}
+.title {
+    text-align: center;
+    padding-bottom: 10px;
+}

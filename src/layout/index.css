@@ -1,0 +1,8 @@
+.ant-layout-sider,.ant-layout-sider-trigger,.site-layout-background{
+    background-color: #fff;
+}
+.header-content{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
