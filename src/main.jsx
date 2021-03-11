@@ -1,16 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import 'antd/dist/antd.css'; 
 import Layout from './layout'
 
 
 ReactDOM.render(
   <React.Fragment>
-    <BrowserRouter>
+    <HashRouter>
       <Layout />
-    </BrowserRouter>
+    </HashRouter>
   </React.Fragment>,
   document.getElementById('root')
 )

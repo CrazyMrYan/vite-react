@@ -11,7 +11,6 @@ class Login extends Component {
         this.props.history.push('/home')
     }
     render() {
-        console.log(this.props)
         return (
             <div className="login-bg">
                 <div className="login-form" >
