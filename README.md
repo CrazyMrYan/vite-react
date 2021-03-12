@@ -25,3 +25,8 @@ yarn dev
 - @ant-design/charts
 - @ant-design/icons
 - pubsub-js
+
+## 访问地址
+[gh-pages](https://crazymryan.github.io/vite-react/#/login)
+
+[国内](http://lovemysoul.vip/vite-react/#/login)

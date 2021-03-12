@@ -2,6 +2,7 @@ import Home from '../pages/Home'
 import UserInfo from '../pages/UserInfo'
 import Multilevel3 from '../pages/Multilevel/pages/Multilevel3'
 import Multilevel4 from '../pages/Multilevel/pages/Multilevel4'
+import Multilevel2 from '../pages/Multilevel/Multilevel2'
 
 const MenuConfig = [
     {
@@ -38,7 +39,13 @@ const MenuConfig = [
                         component:Multilevel4
                     },
                 ]
-            }
+            },
+            {
+                icon:'UnorderedListOutlined',
+                title:'1-2',
+                key:'/Multilevel2',
+                component:Multilevel2
+            },
         ]
     },
     {
