@@ -4,7 +4,7 @@ import { Form, Input, Button } from 'antd';
 import './index.css'
 import PubSub from 'pubsub-js'
 
-class Login extends Component {
+export default class Login extends Component {
     getLogin = () => {
         sessionStorage.setItem('token','11jsjhs')
         PubSub.publish('stateData',{ selectedKey: ['/home'] })
@@ -37,4 +37,3 @@ class Login extends Component {
         )
     }
 }
-export default Login

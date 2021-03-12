@@ -6,3 +6,6 @@
     justify-content:flex-end;
     align-items: center;
 }
+.logo{
+    line-height: 60px;
+}
