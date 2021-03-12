@@ -1,5 +1,7 @@
 import Home from '../pages/Home'
 import UserInfo from '../pages/UserInfo'
+import Multilevel3 from '../pages/Multilevel/pages/Multilevel3'
+import Multilevel4 from '../pages/Multilevel/pages/Multilevel4'
 
 const MenuConfig = [
     {
@@ -11,8 +13,32 @@ const MenuConfig = [
                 icon:'HomeOutlined',
                 title:'首页',
                 key:'/home',
-                component:Home,
-            } 
+                component:Home
+            }
+        ]
+    },
+    {
+        icon:'MenuOutlined',
+        title:'多级菜单1',
+        key:'/Multilevel1',
+        children:[
+            {
+                icon:'UnorderedListOutlined',
+                title:'1-1',
+                key:'/Multilevel2',
+                children: [
+                    {
+                        title:'1-1-1',
+                        key:'/Multilevel3',
+                        component:Multilevel3
+                    },
+                    {
+                        title:'1-1-2',
+                        key:'/Multilevel4',
+                        component:Multilevel4
+                    },
+                ]
+            }
         ]
     },
     {

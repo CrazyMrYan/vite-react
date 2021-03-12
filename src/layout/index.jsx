@@ -28,23 +28,24 @@ class SiderDemo extends React.Component {
         this.props.history.push(path)
         this.setState({ selectedKey: [path] })
     }
+    getIcon = icons => {
+        return React.createElement(icons, {
+            className: 'icon',
+        })
+    }
     // 导航封装
     renderMenu = data => {
         return data.map(item => {
-            let icons = this.state.Icons[item.icon]
+            let icons = this.state.Icons[item.icon] || null
             if (item.children)
-                return (<SubMenu key={item.key} icon={React.createElement(icons, {
-                    className: 'icon',
-                })} title={item.title}>
+                return (<SubMenu key={item.key} icon={ icons?this.getIcon(icons):'' } title={item.title}>
                     {
                         this.renderMenu(item.children)
                     }
                 </SubMenu>)
             return <Menu.Item key={item.key}>
                 {
-                    React.createElement(icons, {
-                        className: 'icon',
-                    })
+                    icons?this.getIcon(icons):''
                 }
                 <NavLink to={item.key} children={item.title} /> </Menu.Item>
         })
