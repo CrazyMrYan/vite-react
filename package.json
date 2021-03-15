@@ -1,11 +1,12 @@
 {
-  "name": "react-vite",
+  "name": "vite-react",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
+  "license":"MIT",
   "dependencies": {
     "@ant-design/charts": "^1.0.20",
     "@ant-design/icons": "^4.5.0",
