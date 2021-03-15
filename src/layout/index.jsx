@@ -33,7 +33,7 @@ class Sidebar extends React.Component {
         let current = this.routeData.filter(item => {
             return item.key == path
         })
-        document.title = current[0].title
+        document.title = !!current.length ? current[0].title : 'app'
     }
     // 获取当前route 的title
     routeData = []
