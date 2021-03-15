@@ -1,4 +1,5 @@
-# vite-react
+<h1 style="text-align: center;">vite-react <br/> <img src="http://lovemysoul.vip/vite-react/logo.png" width="140px"></h1>
+
 
 使用 [create-app-template-react](https://github.com/vitejs/vite/tree/main/packages/create-app/template-react) 模版
 

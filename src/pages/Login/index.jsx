@@ -18,7 +18,7 @@ export default class Login extends Component {
         return (
             <div className="login-bg">
                 <div className="login-form" >
-                    <h1>logo</h1>
+                    <h1><img className="logo" src="http://lovemysoul.vip/vite-react/logo.png" alt="" /></h1>
                     <Form>
                         <Form.Item>
                             <Input

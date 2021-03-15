@@ -11,7 +11,7 @@ export default class ReadMe extends Component {
     render() {
         return (
             <div>
-                <h1 style={{ fontSize:'30px' }}>vite-react</h1>
+                <h1 style={{ fontSize:'30px' }}><img className="logo" src="http://lovemysoul.vip/vite-react/logo.png" alt="" /> <br/>vite-react </h1>
                 <h2>克隆代码</h2>
                 <CodePreview>git clone git@github.com:CrazyMrYan/vite-react.git</CodePreview>
 

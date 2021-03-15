@@ -81,8 +81,8 @@ class Sidebar extends React.Component {
         return (
             !!sessionStorage.getItem('token') ? <Layout style={{ minHeight: '100vh' }}>
                 <Sider collapsible collapsed={collapsed} trigger={null} onCollapse={ this.onCollapse }>
-                    <div className="logo" style={{ height: '60px' , textAlign: 'center'}} >
-                        <h1 >logo</h1>
+                    <div style={{ height: '60px' , textAlign: 'center'}} >
+                        <h1 ><img className="homelogo" src="http://lovemysoul.vip/vite-react/logo.png" alt=""/></h1>
                     </div>
                     <Menu onSelect={ e => { this.changeMenu(e.key) }} selectedKeys={ selectedKey } mode="inline">
                         {
