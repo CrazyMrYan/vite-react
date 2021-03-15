@@ -6,9 +6,13 @@ import PubSub from 'pubsub-js'
 
 export default class Login extends Component {
     getLogin = () => {
-        sessionStorage.setItem('token','11jsjhs')
+        sessionStorage.setItem('token',new Date().getTime())
         PubSub.publish('stateData',{ selectedKey: ['/home'] })
         this.props.history.push('/home')
+        document.title = '首页'
+    }
+    componentDidMount(){
+        document.title = '登录'
     }
     render() {
         return (
