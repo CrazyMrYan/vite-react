@@ -30,4 +30,4 @@ yarn dev
 ## 访问地址
 [gh-pages](https://crazymryan.github.io/vite-react/#/login)
 
-[国内](http://lovemysoul.vip/vite-react/#/login)
+[国内](https://lovemysoul.vip/vite-react/#/login)
