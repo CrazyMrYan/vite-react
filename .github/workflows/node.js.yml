@@ -1,49 +1,35 @@
-name: build & Deploy
+name: Github Actions Build and Deploy Demo
 
 on:
+
   push:
+
     branches:
+
       - main
 
 jobs:
-  build:
 
-    runs-on: ubuntu-latest
-    container: node:12.16-alpine
+  build-and-deploy:
+
+    runs-on: ubuntu-lastest
 
     steps:
-      - name: Checkout repository code
-        uses: actions/checkout@v2
-      - name: Cache node modules
-        uses: actions/cache@v1
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: ./node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-  
-      - name: Install Dependencies
-        run: npm install
-        
-      - name: Build Dependencies
-        run: npm run build
-        
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist
-          BASE_BRANCH: main
-        
-        env:
-          CI: true
 
+      - name: Checkout
 
+        uses: actions/checkout@v2.4.2
 
+      - name: Build
 
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
 
+    env:
+
+      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+      BRAHCN: gh-pages
+
+      FOLDER: dist
+
+      BUILD_SCRIPT: npm install && npm run build
